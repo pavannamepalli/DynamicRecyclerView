@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         }else {
             if (Patterns.EMAIL_ADDRESS.matcher(emailtext).matches() && number.length == 10 ) {
-              
+
                 userList.add(Data("Email: $emailtext","Mobile No. : $number"))
                 userAdapter.notifyDataSetChanged()
                 Toast.makeText(this,"Adding User Information Success", Toast.LENGTH_SHORT).show()
